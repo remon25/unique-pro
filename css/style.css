@@ -1781,7 +1781,7 @@ textarea.w-select {
   }
 
   canvas#canvas3d {
-    position: absolute !important;
+    position: fixed !important;
     top: 50%;
     transform: translateY(-40%);
   }
@@ -6227,10 +6227,10 @@ html.w-mod-js [data-ix="text-0-2"] {
   }
   .h-quote-w {
     left: 11.4vw;
-    bottom: 11.6vw;
+    bottom: 1.6rem;
   }
   .h-quote {
-    font-size: 6vw;
+    font-size: 5vw;
     line-height: 6vw;
   }
   .h-slant {
