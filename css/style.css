@@ -6160,7 +6160,7 @@ html.w-mod-js [data-ix="text-0-2"] {
   }
 }
 @media screen and (max-width: 479px) {
-  .h-head.arabic{
+  .h-head.arabic {
     font-size: 56px !important;
   }
   .l-head {
@@ -6264,16 +6264,15 @@ html.w-mod-js [data-ix="text-0-2"] {
   .p-block {
     margin-top: 2vh;
   }
-  .p-client-w{
+  .p-client-w {
     height: auto;
   }
-  .p-side
-  {
+  .p-side {
     position: static;
-    transform: translate(0%,0%);
+    transform: translate(0%, 0%);
   }
-  .p-col.pagelink:hover .p-side{
-    transform: translate(0%,10%);
+  .p-col.pagelink:hover .p-side {
+    transform: translate(0%, 10%);
   }
   .c-col {
     padding-top: 28vw;
@@ -6475,17 +6474,31 @@ html.w-mod-js [data-ix="text-0-2"] {
   }
   .pr-hero {
     height: 90vh;
+    margin-top: 5rem;
   }
   .pr-title {
-    font-size: 12vw;
-    line-height: 11vw;
+    font-size: 16vw;
+    line-height: 27vw;
   }
+  .more{
+    margin-top: 2rem;
+  }
+  .more h3{
+    font-size:6vw !important ;
+  }
+  .more svg{
+    width:10vw;
+  }
+
   .pr-title.pr-fill {
-    line-height: 10vw;
+    line-height: 27vw;
   }
   .pr-div.prd-1,
   .pr-div.prd-2 {
     width: 16vw;
+  }
+  .photo-album {
+    padding: 0 !important;
   }
   .pr-client {
     font-size: 17vw;
@@ -6493,11 +6506,11 @@ html.w-mod-js [data-ix="text-0-2"] {
   }
   .pr-scroll {
     left: 43vw;
-    bottom: 17.7vw;
-    width: 14vw;
+    bottom: 0.7vw;
+    width: 9vw;
   }
   .pr-thumb {
-    width: 8vw;
+    width: 25vw;
   }
   .pr-img {
     right: 10vw;
@@ -6529,7 +6542,7 @@ html.w-mod-js [data-ix="text-0-2"] {
     float: none;
   }
   .pr-quote {
-    font-size: 13vw;
+    font-size: 8vw;
     line-height: 12vw;
     text-indent: 3vw;
   }
@@ -6537,8 +6550,16 @@ html.w-mod-js [data-ix="text-0-2"] {
     margin-top: 21vw;
   }
   .pr-virg {
-    left: -28.1vw;
-    width: 36vw;
+    left: -18.1vw;
+    width: 23vw;
+  }
+  .photo-row.two {
+    grid-template-columns: 0.9fr !important;
+    row-gap: 4rem;
+  }
+  .photo-row.one {
+    grid-template-columns: 0.9fr !important;
+    padding-left: 5vw !important;
   }
   .prc-head {
     font-size: 36vw;
