@@ -6161,7 +6161,7 @@ html.w-mod-js [data-ix="text-0-2"] {
 }
 @media screen and (max-width: 479px) {
   .h-head.arabic {
-    font-size: 56px !important;
+    font-size: 70px !important;
   }
   .l-head {
     font-size: 10vw;
@@ -6219,8 +6219,8 @@ html.w-mod-js [data-ix="text-0-2"] {
   }
   .h-head {
     padding-top: 2vw;
-    font-size: 15vw;
-    line-height: 19vw;
+    font-size: 23vw;
+    line-height: 20vw;
   }
   .h-row {
     margin-top: 18vw;
