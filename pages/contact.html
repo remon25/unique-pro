@@ -565,7 +565,7 @@
       }
     </style>
   </head>
-  <body class="body">
+  <body class="body contact-body" style="overflow: visible;">
     <a
       rel="noopener"
       aria-label="trigger"
@@ -719,43 +719,60 @@
       </div>
     </nav>
     <div class="cursor cursorcontainer"></div>
-    <div class="rotate">
-      <div class="text-block-9">Rotate your device, please.</div>
-    </div>
     <main class="contact">
-      <div class="c-col">
-        <div class="c-block w-clearfix">
-          <div class="c-item ci-1 w-clearfix">
-            <h2 data-w-id="f697a518-b656-008f-976c-9fe250c6d948" class="c-head">
-              دعنا
-            </h2>
+      <div class="contact__content">
+        <h3 class="contact__title">دعنا نصمم معا تصميم فريد...</h3>
+        <form class="contact__form" id="contact-form">
+          <div class="contact__form-div">
+            <label class="contact__form-tag">الأسم</label>
+            <input
+              type="text"
+              name="user_name"
+              class="contact__form-input"
+              placeholder="أكتب اسمك"
+              id="contact-name"
+            />
           </div>
-          <div class="c-item ci-2">
-            <div
-              data-w-id="75f34ffc-1648-d14b-1d05-e0517d5914f4"
-              class="c-inner w-clearfix"
-            >
-              <h2 class="c-head">نصمم معا</h2>
-            </div>
+
+          <div class="contact__form-div">
+            <label class="contact__form-tag">البريد</label>
+            <input
+              type="email"
+              name="user_email"
+              class="contact__form-input"
+              placeholder="أكتب بريدك الالكتروني"
+              id="contact-email"
+            />
           </div>
-          <div class="c-item ci-3">
-            <div
-              data-w-id="dff252ef-002a-30db-e5e2-60d926bc77a1"
-              class="c-inner w-clearfix"
-            >
-              <div class="c-letter cl-2 w-embed"></div>
-              <h2 class="c-head">تصميم</h2>
-            </div>
+
+          <div class="contact__form-div contact__form-area">
+            <label class="contact__form-tag">الرسالة</label>
+            <textarea
+              name="user_project"
+              placeholder="أكتب رسالتك"
+              id="contact-project"
+              class="contact__form-input"
+            ></textarea>
           </div>
-          <div class="c-item ci-4">
-            <div
-              data-w-id="201dcfca-cbac-4fd2-d9bf-7f0d50da1384"
-              class="c-inner ci-2 w-clearfix"
-            >
-              <h2 class="c-head">فريد</h2>
-            </div>
-          </div>
-        </div>
+          <p class="contact__message" id="contact-message"></p>
+          <button class="contact__button" type="submit">
+            أرسل
+            <span class="contact-icon">
+              <svg
+                viewBox="0 0 72 100"
+                width="20px"
+                style="transform: rotate(90deg)"
+              >
+                <path
+                  style="fill: #191919"
+                  d="M70.4,58.9L70.1,57l-0.2-0.9c0,0,0,0,0,0l-0.2-0.9c-18.7,3.4-27.6,13.4-31.9,22.7V3h-0.9H35h-0.9
+      v75.3c-4.2-9.7-13.2-20.2-31.9-23.2L1.9,57L1.7,58c0,0,0,0,0,0l-0.1,0.9c28.7,4.5,32.2,27.6,32.5,35.3c-0.1,1.7,0,2.7,0,2.8l0.9-0.1
+      v0l0.5,0l2.4,0.1c0,0,0-0.6,0-1.5v-2.5C38.4,84.4,42.5,63.9,70.4,58.9z"
+                />
+              </svg>
+            </span>
+          </button>
+        </form>
       </div>
 
       <div class="mapouter">
@@ -786,7 +803,7 @@
               data-w-id="caae8015-8190-0805-4a68-ce8ef278d24b"
               class="c-email"
             >
-              unique-pro.net
+              info@unique-pro.net
             </div>
             <div
               data-w-id="cf4bd703-48b7-d2ea-e629-398d676bc057"
