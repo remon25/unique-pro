@@ -465,9 +465,6 @@
       </div>
     </nav>
     <div class="cursor cursorcontainer"></div>
-    <div class="rotate">
-      <div class="text-block-9">Rotate your device, please.</div>
-    </div>
     <div class="hero">
       <div class="h-row">
         <div class="h-block hb-1"></div>
@@ -738,7 +735,19 @@
       import { Application } from "./javascript/runtime.js";
       const canvas = document.getElementById("canvas3d");
       const app = new Application(canvas);
-      app.load("./javascript/sceneTest.splinecode");
+
+
+      if(window.innerWidth <= 400){
+        app.load("./javascript/sceneTe.splinecode");
+ 
+      }else{
+
+        app.load("./javascript/sceneTest.splinecode");
+
+
+      }
+
+
     </script>
     <script
       src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5ea69b4027484b2df2b45806"
