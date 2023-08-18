@@ -1783,7 +1783,7 @@ textarea.w-select {
   canvas#canvas3d {
     position: absolute !important;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
   }
 }
 @media screen and (max-width: 767px) {
