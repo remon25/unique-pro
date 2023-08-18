@@ -164,7 +164,7 @@ table {
 td,
 th {
   padding: 0;
-} 
+}
 
 /* svg*/
 
@@ -172,32 +172,31 @@ th {
   width: 100px;
   stroke-width: 2px;
 }
-#Layer_1 path{
+#Layer_1 path {
   transition: 0.2s all ease;
   animation: fill-animation 10s linear infinite;
 }
 
-
-@keyframes fill-animation{
-  0%{
+@keyframes fill-animation {
+  0% {
     fill: none;
   }
-  70%{
+  70% {
     fill: #000;
   }
-  72%{
+  72% {
     fill: none;
   }
-  74%{
+  74% {
     fill: #000;
   }
-  76%{
+  76% {
     fill: none;
   }
-  77%{
+  77% {
     fill: #000;
   }
-  78%{
+  78% {
     fill: none;
   }
 }
@@ -739,6 +738,9 @@ textarea.w-select {
   display: none !important;
 }
 @media screen and (max-width: 991px) {
+  body {
+    min-height: unset !important;
+  }
   .w-container {
     max-width: 728px;
   }
@@ -1774,6 +1776,15 @@ textarea.w-select {
   .w-nav[data-collapse="medium"] .w-nav-button {
     display: block;
   }
+  .h-head.arabic {
+    font-size: 80px !important;
+  }
+
+  canvas#canvas3d {
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 @media screen and (max-width: 767px) {
   .w-nav[data-collapse="small"] .w-nav-menu {
@@ -2022,7 +2033,7 @@ h5 {
   display: inline-block;
   width: 5vw;
 }
-.nav-logo img{
+.nav-logo img {
   mix-blend-mode: difference;
 }
 .nav-logo.w--current {
@@ -2055,6 +2066,7 @@ h5 {
   -ms-flex-align: center;
   align-items: center;
 }
+
 .h-block {
   position: relative;
   display: inline-block;
@@ -2087,6 +2099,10 @@ h5 {
   line-height: 10vw;
   font-weight: 400;
 }
+.h-head.arabic {
+  font-size: 120px;
+  font-family: "Kufi";
+}
 .h-row {
   margin-bottom: 1vw;
 }
@@ -2107,12 +2123,12 @@ h5 {
   cursor: pointer;
 }
 
-.h-quote:hover::after{
+.h-quote:hover::after {
   animation: line 1s linear alternate;
-  animation-timing-function:cubic-bezier(0.77, 0, 0.175, 1);
+  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-.h-quote::after{
+.h-quote::after {
   position: absolute;
   right: 5%;
   bottom: 0;
@@ -2123,18 +2139,16 @@ h5 {
 }
 
 @keyframes line {
-  0%{
+  0% {
     width: 0%;
   }
-  50%{
+  50% {
     width: 90%;
   }
-  100%{
+  100% {
     left: 5%;
- }
-  
+  }
 }
-
 
 .h-quote.face {
   padding-right: 0.2vw;
@@ -2199,7 +2213,7 @@ h5 {
   font-weight: 400;
 }
 .p-client {
-  font-family: 'Kufi';
+  font-family: "Kufi";
   display: inline-block;
   padding-top: 1vh;
   padding-right: 0.5vh;
@@ -2225,7 +2239,7 @@ h5 {
   flex-direction: column;
 }
 .p-title {
-  font-family: 'Droid';
+  font-family: "Droid";
   padding-right: 1vh;
   font-size: 3vh;
   line-height: 3vh;
@@ -2235,15 +2249,12 @@ h5 {
 }
 .contact {
   direction: rtl;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  align-items: end;
+  align-items: center;
   width: 100%;
-  height: 80vh;
+  margin-top: 5rem;
 }
-.contact .mapouter{
+.contact .mapouter {
   width: 400px;
 }
 
@@ -2278,7 +2289,7 @@ h5 {
   padding-top: 0.9vw;
   padding-right: 7vw;
   padding-bottom: 1vw;
-  font-family:'Kufi' ;
+  font-family: "Kufi";
   font-size: 5vw;
   line-height: 6vw;
   font-weight: 400;
@@ -2380,7 +2391,6 @@ h5 {
   display: flex;
   justify-content: center;
   column-gap: 4rem;
-
 }
 .social-col.sc-2 {
   height: 5vw;
@@ -2427,7 +2437,7 @@ h5 {
   transition: letter-spacing 0.3s ease-out;
   color: #e2e2dd;
   line-height: 9vw;
-  font-family: 'Kufi';
+  font-family: "Kufi";
   font-size: 6vw;
 }
 .m-head:hover {
@@ -2483,12 +2493,11 @@ h5 {
   align-items: center;
   column-gap: 1.5rem;
 }
-.menu-item svg{
+.menu-item svg {
   transform: rotate(90deg) translateX(10px);
   width: 6vw;
-
 }
-.menu-item a{
+.menu-item a {
   display: flex;
   column-gap: 1.5rem;
 }
@@ -2507,7 +2516,7 @@ h5 {
 }
 .menu-ti {
   display: inline-block;
-  font-family: 'Kufi';
+  font-family: "Kufi";
   color: #e2e2dd;
   font-size: 3.5vw;
   line-height: 4vw;
@@ -2519,7 +2528,7 @@ h5 {
   overflow: hidden;
   float: left;
   clear: both;
-  height: 62px;
+  height: 60px;
 }
 .menu-as.ma2 {
   margin-top: 16vw;
@@ -2606,7 +2615,7 @@ h5 {
 .img {
   width: 100%;
   height: 100%;
-  background-image: url('../profile.jpg');
+  background-image: url("../profile.jpg");
   /* background-image: url("https://uploads-ssl.webflow.com/5ea69b4027484b2df2b45806/5ecff93e023f667e859baf70_profile.jpg"); */
   background-position: 50% 50%;
   background-size: cover;
@@ -2622,8 +2631,8 @@ h5 {
 .a-block {
   overflow: hidden;
 }
-.a-block h1{
-  font-family: 'Kufi';
+.a-block h1 {
+  font-family: "Kufi";
   font-size: 7vw;
 }
 .a-quote {
@@ -2648,7 +2657,6 @@ h5 {
   margin-top: 8vw;
   margin-bottom: 5vw;
   justify-content: space-evenly;
-
 }
 .a-desc {
   max-width: 70%;
@@ -2658,15 +2666,14 @@ h5 {
   font-weight: 400;
   text-transform: none;
 }
-.a-desc-w svg{
+.a-desc-w svg {
   transform: rotate(45deg);
   transition: 0.3s all ease;
 }
 
-.a-desc-w:hover svg{
+.a-desc-w:hover svg {
   transform: rotate(90deg);
 }
-
 .at-block {
   position: relative;
   max-width: 25vw;
@@ -2948,7 +2955,7 @@ h5 {
   margin-right: 1vw;
   margin-left: 1.3vw;
   padding-top: 0.8vw;
-  font-family: 'Droid';
+  font-family: "Droid";
   font-size: 6vw;
   line-height: 8vw;
   letter-spacing: -0.04em;
@@ -3112,18 +3119,17 @@ h5 {
   float: right;
 }
 .pr-quote {
-  font-family: 'Kufi';
+  font-family: "Kufi";
   font-size: 6vw;
   line-height: 9vw;
   text-indent: 4vw;
   text-transform: none;
 }
-.pr-quote-w{
+.pr-quote-w {
   position: relative;
   direction: rtl;
 }
-.pr-quote
-.pr-quote-w {
+.pr-quote .pr-quote-w {
   position: relative;
   margin-top: 10vw;
   padding-left: 10vw;
@@ -3519,7 +3525,7 @@ h5 {
 .a-award {
   width: 100%;
   padding-top: 5vw;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   display: flex;
   justify-content: center;
 }
@@ -3529,18 +3535,17 @@ h5 {
 }
 .aw-block {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 3rem;
-    flex: 1;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3rem;
+  flex: 1;
   margin-top: 5vw;
-
 }
 
-.aw-block p{
+.aw-block p {
   margin-bottom: 10px;
   padding: 30px 40px;
-  font-family: 'Droid';
+  font-family: "Droid";
   line-height: 2;
   font-size: 1.8vw;
   text-align: justify;
@@ -3604,7 +3609,7 @@ h5 {
   display: flex;
 }
 .aw-head {
-  font-family: 'Kufi';
+  font-family: "Kufi";
   font-size: 9vw;
   line-height: 7vw;
 }
@@ -3627,8 +3632,8 @@ h5 {
   -ms-flex-align: center;
   align-items: center;
 }
-.a-contact h2{
-  font-family: 'Kufi';
+.a-contact h2 {
+  font-family: "Kufi";
   font-size: 4vw;
 }
 .vinyl {
@@ -3706,11 +3711,8 @@ h5 {
   filter: grayscale(1);
   transition: 0.3s all ease;
 }
-.a-img:hover{
-
+.a-img:hover {
   filter: grayscale(0);
-
-
 }
 .aw-div {
   width: 100%;
@@ -5394,31 +5396,34 @@ html.w-mod-js [data-ix="text-0-2"] {
     height: 78vh;
   }
   .contact {
-    height: auto;
-    padding-bottom: 12vw;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    height: unset;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
   }
   .c-col {
-    width: 100%;
-    height: auto;
-    padding-top: 20vw;
-    padding-left: 20vw;
     -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
     align-items: flex-start;
   }
   .c-col.cc-2 {
-    padding-top: 10vw;
-    padding-left: 22vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
   }
+  .c-col.cc-2 .c-block {
+    width: 100%;
+  }
+  .gmap_canvas iframe {
+    height: 300px !important;
+    width: 350px !important;
+  }
+
   .c-head {
-    font-size: 16vw;
-    line-height: 12vw;
+    font-size: 7vw;
+    line-height: 8vw;
+  }
+  .c-item.ci-2 {
+    left: 0;
   }
   .c-letter {
     width: 5.5vw;
@@ -5430,11 +5435,11 @@ html.w-mod-js [data-ix="text-0-2"] {
     margin-right: -3vw;
   }
   .c-email {
-    font-size: 5vw;
-    line-height: 6vw;
+    font-size: 3vw;
+    line-height: 3vw;
   }
   .c-icon {
-    width: 3vw;
+    width: 2vw;
   }
   .c-social {
     margin-bottom: 1.5vw;
@@ -5450,8 +5455,11 @@ html.w-mod-js [data-ix="text-0-2"] {
     display: none;
   }
   .m-head {
-    font-size: 12vw;
-    line-height: 12vw;
+    font-size: 6vw;
+    line-height: 10vw;
+  }
+  .menu-col {
+    margin-top: 5rem;
   }
   .menu-bl {
     width: 5vw;
@@ -5484,8 +5492,11 @@ html.w-mod-js [data-ix="text-0-2"] {
   }
   .a-desc {
     max-width: 77%;
-    font-size: 5vw;
+    font-size: 3vw;
     line-height: 5vw;
+  }
+  .aw-block p {
+    font-size: 2.2vw;
   }
   .at-block {
     max-width: 33vw;
@@ -5537,10 +5548,32 @@ html.w-mod-js [data-ix="text-0-2"] {
   .sidescrollbox {
     width: auto;
     height: 100%;
+    margin-top: 5rem;
+  }
+
+  main#work {
+    margin-bottom: 5rem;
+  }
+  .p-client {
+    font-size: 4vw;
   }
   .pr-title {
-    font-size: 12vw;
-    line-height: 10vw;
+    font-size: 6vw;
+    line-height: 11vw;
+  }
+  .p-title-w {
+    position: relative;
+    display: none;
+  }
+  .p-side {
+    bottom: 100px;
+    transition: 0.3s all ease;
+  }
+  .p-inner:hover .p-side {
+    bottom: 70px;
+  }
+  .p-arrow {
+    width: 9vh;
   }
   .pr-div.prd-1,
   .pr-div.prd-2 {
@@ -5570,11 +5603,11 @@ html.w-mod-js [data-ix="text-0-2"] {
     line-height: 3vw;
   }
   .pr-quote {
-    font-size: 13vw;
-    line-height: 11vw;
+    font-size: 6vw;
+    line-height: 10vw;
   }
   .pr-virg {
-    width: 29vw;
+    width: 20vw;
   }
   .prc-head {
     font-size: 20vw;
@@ -6127,6 +6160,9 @@ html.w-mod-js [data-ix="text-0-2"] {
   }
 }
 @media screen and (max-width: 479px) {
+  .h-head.arabic{
+    font-size: 56px !important;
+  }
   .l-head {
     font-size: 10vw;
     line-height: 11vw;
@@ -6145,12 +6181,13 @@ html.w-mod-js [data-ix="text-0-2"] {
   }
   .hero {
     position: fixed;
-    left: 0;
+    left: 15vw;
     top: 0;
     right: 0;
     bottom: 0;
     height: 100%;
   }
+
   .h-block.hb-1 {
     right: -9.1vw;
     bottom: 5.1vw;
@@ -6181,8 +6218,8 @@ html.w-mod-js [data-ix="text-0-2"] {
   }
   .h-head {
     padding-top: 2vw;
-    font-size: 24vw;
-    line-height: 20vw;
+    font-size: 15vw;
+    line-height: 19vw;
   }
   .h-row {
     margin-top: 18vw;
@@ -6210,19 +6247,38 @@ html.w-mod-js [data-ix="text-0-2"] {
     width: 200vh;
   }
   .p-col.pagelink {
-    width: 40vh;
+    width: 90vw;
     height: 67vh;
+    border-bottom: 1px solid #000;
   }
   .p-numb {
-    font-size: 55vh;
-    line-height: 39vh;
+    font-size: 50vw;
+    line-height: 35vh;
+  }
+  .p-client {
+    font-size: 9vw;
+  }
+  .elastic {
+    display: none;
   }
   .p-block {
     margin-top: 2vh;
   }
+  .p-client-w{
+    height: auto;
+  }
+  .p-side
+  {
+    position: static;
+    transform: translate(0%,0%);
+  }
+  .p-col.pagelink:hover .p-side{
+    transform: translate(0%,10%);
+  }
   .c-col {
     padding-top: 28vw;
     padding-left: 16vw;
+    margin-top: 10rem;
   }
   .c-col.cc-2 {
     padding-top: 19vw;
@@ -6268,7 +6324,7 @@ html.w-mod-js [data-ix="text-0-2"] {
     align-items: center;
   }
   .m-head {
-    font-size: 18vw;
+    font-size: 9vw;
     line-height: 18vw;
   }
   .menu-bl {
@@ -6304,15 +6360,22 @@ html.w-mod-js [data-ix="text-0-2"] {
   }
   .menu-as {
     margin-bottom: 3vw;
+    height: unset;
   }
   .menu-as.ma2 {
     margin-top: 0;
+  }
+  .a-hero {
+    margin-top: 2rem;
   }
   .a-logo {
     width: 58vw;
   }
   .a-logo.al-2 {
     width: 75vw;
+  }
+  .a-img .img {
+    margin-top: 2rem;
   }
   .a-img-w {
     top: -5.6vw;
@@ -6339,13 +6402,24 @@ html.w-mod-js [data-ix="text-0-2"] {
     margin-top: 16vw;
   }
   .a-desc {
-    font-size: 9vw;
+    font-size: 4vw;
     line-height: 10vw;
-    text-align: left;
+    text-align: justify;
   }
   .at-block {
     max-width: 81vw;
     margin-top: 10vw;
+  }
+
+  .a-award {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .a-award.misson {
+    flex-direction: column !important;
+  }
+  .aw-block p {
+    font-size: 4vw;
   }
   .a-text {
     -webkit-box-orient: vertical;
@@ -6626,13 +6700,20 @@ html.w-mod-js [data-ix="text-0-2"] {
     height: 7vw;
   }
   .aw-grid {
-    width: 70vw;
+    width: 80vw;
     margin-top: 11vw;
     margin-left: 0;
     float: none;
+    align-self: center;
+  }
+  .a-award.misson .aw-grid {
+    width: 100vw;
   }
   .aw-grid.awg {
     width: 78vw;
+  }
+  .aw-block {
+    row-gap: 1rem;
   }
   .awd-text {
     font-size: 4vw;
@@ -6645,6 +6726,9 @@ html.w-mod-js [data-ix="text-0-2"] {
   .a-heads {
     overflow: hidden;
     height: 170vw;
+  }
+  .a-contact h2 {
+    font-size: 7vw;
   }
   .vinyl {
     width: 160vw;
@@ -6891,6 +6975,11 @@ html.w-mod-js [data-ix="text-0-2"] {
   .sp-text-w {
     margin-top: 13vw;
   }
+  main#work {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+  }
   .sp-img-w {
     position: absolute;
     left: 49.4vw;
@@ -7045,25 +7134,6 @@ html.w-mod-js [data-ix="text-0-2"] {
     font-size: 12vw;
     line-height: 10vw;
   }
-  .cookie {
-    padding-top: 27vw;
-    padding-right: 8vw;
-    padding-left: 8vw;
-  }
-  .cookie-c {
-    left: 18.3vw;
-    top: auto;
-    right: 0;
-    bottom: 4vw;
-    display: none;
-    width: 64vw;
-    padding-top: 4.5vw;
-    padding-bottom: 4.5vw;
-  }
-  .cookie-t {
-    font-size: 4vw;
-    line-height: 4vw;
-  }
   .confirm {
     font-size: 0.7rem;
   }
@@ -7114,53 +7184,51 @@ html.w-mod-js [data-ix="text-0-2"] {
   }
 }
 
-.photo-album{
+.photo-album {
   padding: 5rem;
   display: flex;
   flex-direction: column;
   row-gap: 10rem;
 }
-.photo-album img{
+.photo-album img {
   filter: grayscale(1);
-  transition:0.3s all ease-in-out ;
+  transition: 0.3s all ease-in-out;
 }
-.photo-album img:hover{
+.photo-album img:hover {
   filter: grayscale(0);
 }
 
-.photo-row{
+.photo-row {
   display: grid;
   justify-content: center;
 }
 
-.photo-row.one{
+.photo-row.one {
   grid-template-columns: 0.8fr;
 }
 
-.photo-row.two{
+.photo-row.two {
   grid-template-columns: 1fr 1fr;
   column-gap: 4rem;
 }
 
-.more{
+.more {
   direction: rtl;
   width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 5rem;
-    transition: 0.3s all ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5rem;
+  transition: 0.3s all ease;
 }
-.more:hover{
+.more:hover {
   column-gap: 2rem;
 }
 
-.more h3{
+.more h3 {
   font-family: "Kufi";
   font-size: 5vw;
 }
-
-
 
 @font-face {
   font-family: "Roslindale Display Condensed";
