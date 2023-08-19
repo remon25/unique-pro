@@ -2698,6 +2698,7 @@ h5 {
 .a-desc-w svg {
   transform: rotate(45deg);
   transition: 0.3s all ease;
+  display:none;
 }
 
 .a-desc-w:hover svg {
