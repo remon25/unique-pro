@@ -6326,6 +6326,7 @@ html.w-mod-js [data-ix="text-0-2"] {
   }
 
   main#work {
+    grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
     place-items: center;
   }
   .p-col.pagelink:nth-child(3) {
