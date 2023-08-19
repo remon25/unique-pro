@@ -791,12 +791,6 @@ textarea.w-select {
     left: auto;
     right: auto;
   }
-  .contact {
-    column-gap: 1rem;
-  }
-  .contact__form {
-    width: 340px !important;
-  }
 }
 @media screen and (max-width: 767px) {
   .photo-album {
@@ -862,34 +856,6 @@ textarea.w-select {
   }
   .w-col-small-12 {
     width: 100%;
-  }
-
-  .contact {
-    margin-bottom: 2rem !important;
-    grid-template-columns: 1fr !important;
-    grid-template-rows: repeat(2, 1fr) !important;
-  }
-  .contact__form-tag{
-    font-size: 1rem;
-    padding: 0.35rem !important;
-  }
-  .contact__form-input::placeholder{
-    font-size: 2.5vw;
-  }
-  .c-col.cc-2 {
-    margin-top: 0 !important;
-  }
-
-  .contact__title {
-    font-size: 5vw !important;
-    margin-bottom: 2rem !important;
-  }
-  .contact__form {
-    width: 450px !important;
-  }
-
-  .gmap_canvas iframe {
-    width: 450px !important;
   }
 }
 
@@ -1575,7 +1541,6 @@ textarea.w-select {
     opacity: 1;
   }
 }
-
 .w-lightbox-inactive,
 .w-lightbox-inactive:hover {
   opacity: 0;
@@ -1819,7 +1784,6 @@ textarea.w-select {
 .w--nav-dropdown-list-open {
   position: static;
 }
-
 @media screen and (max-width: 991px) {
   .w-nav[data-collapse="medium"] .w-nav-menu {
     display: none;
@@ -2314,94 +2278,11 @@ h5 {
 }
 .contact {
   direction: rtl;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  place-items: center;
-  justify-content: center;
-
-  align-items: center;
-  margin-top: 8rem;
-  width: 100%;
-}
-
-.contact__form {
-  display: grid;
-  position: relative;
-  width: 360px;
-  row-gap: 2rem;
-}
-
-.contact__title {
-  font-size: 3vw;
-  font-family: "Kufi";
-  margin-bottom: 1rem;
-}
-
-.contact__form-div {
-  position: relative;
-  height: 4rem;
-  font-family: "Kufi";
-}
-.contact__form-tag {
-  position: absolute;
-  background-color: rgb(229, 227, 220);
-  top: -0.75rem;
-  right: 1.25rem;
-  z-index: 10;
-  padding: 0.15rem;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-}
-
-.contact__form-input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #a7a2a2;
-  border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
-  padding: 1.5rem;
-  background: none;
-  outline: none;
-  z-index: 1;
-}
-
-.contact__form-div textarea {
-  height: 100px;
-}
-
-.contact__form .contact__button {
-  border: none;
-  background: none;
-  cursor: pointer;
-  outline: none;
-  font-size: 1.5rem;
-  font-family: "Kufi";
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  column-gap: 1rem;
   align-items: center;
-  transition: 0.3s all ease;
+  width: 100%;
+  margin-top: 5rem;
 }
-.contact__form .contact__button:hover {
-  column-gap: 0.3rem;
-}
-
-.contact__message {
-  margin-top: 1rem;
-  font-family: "Droid";
-}
-
 .contact .mapouter {
   width: 400px;
 }
@@ -2431,7 +2312,7 @@ h5 {
 .c-col.cc-2 {
   direction: ltr;
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 .c-head {
   padding-top: 0.9vw;
@@ -5562,8 +5443,8 @@ html.w-mod-js [data-ix="text-0-2"] {
     width: 100%;
   }
   .gmap_canvas iframe {
-    height: 300px;
-    width: 350px;
+    height: 300px !important;
+    width: 350px !important;
   }
 
   .c-head {
@@ -6326,6 +6207,7 @@ html.w-mod-js [data-ix="text-0-2"] {
   }
 
   main#work {
+    grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
     place-items: center;
   }
   .p-col.pagelink:nth-child(3) {
@@ -6448,33 +6330,14 @@ html.w-mod-js [data-ix="text-0-2"] {
   .p-col.pagelink:hover .p-side {
     transform: translate(0%, 10%);
   }
-
-  .contact__form{
-    width: 85vw !important;
-  }
-
-  .contact .mapouter{
-    width: 280px !important;
-  }
-
-
-  .gmap_canvas iframe{
-    width: 290px !important;
-  }
-
-  .contact__form-input::placeholder{
-    font-size: 4vw;
-  }
-
-
   .c-col {
     padding-top: 28vw;
     padding-left: 16vw;
     margin-top: 10rem;
   }
   .c-col.cc-2 {
-    padding-top: 0;
-    padding-left: 0;
+    padding-top: 19vw;
+    padding-left: 17vw;
   }
   .c-head {
     font-size: 20vw;
@@ -6498,19 +6361,12 @@ html.w-mod-js [data-ix="text-0-2"] {
     line-height: 9vw;
   }
   .c-icon {
-    width: 6vw;
+    width: 4vw;
   }
   .c-text {
     margin-left: 2vw;
     font-size: 4vw;
     line-height: 6vw;
-  }
-  .social-col{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    column-gap: 1rem;
-    row-gap: 0.5rem;
   }
   .social-grid {
     margin-top: 9vw;
